@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { Container } from 'react-bootstrap';
 import { FontWeight } from 'theme/constants';
 import { Paragraph } from 'components/atoms/Typo/Typo';
@@ -10,7 +10,7 @@ import Modal from 'components/atoms/Modal/Modal';
 
 const MostTechnology: React.FC = () => {
   const [modalShow, setModalShow] = React.useState(false);
-  const technologyData = React.useMemo(() => data.mostTechnology, [data]);
+  const { mostTechnology } = data;
   const toggleModal = () => {
     setModalShow(prev => !prev);
   };
@@ -20,13 +20,13 @@ const MostTechnology: React.FC = () => {
         <section className='content-wrapper'>
           <div className='d-flex justify-content-center paragraph-content'>
             <Paragraph className='paragraph' weight={FontWeight.NORMAL}>
-              {technologyData.text}
+              {mostTechnology.text}
             </Paragraph>
           </div>
           <Spacer direction='vertical' size={'medium'} />
           <div className='d-flex justify-content-center content-space-for-mobile'>
             <Button
-              label={technologyData.buttonLabel}
+              label={mostTechnology.buttonLabel}
               onClick={toggleModal}
               height={2}
               width={2}

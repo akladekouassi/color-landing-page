@@ -14,7 +14,7 @@ import advancedImg from '../images/3mm1.png';
 import key from '../icons/key-icon.png';
 import monkey from '../images/monkey.png';
 
-export default {
+const data = {
   header: {
     logo: 'Vision.R',
     menuLabels: ['Low solution', 'Low technology', 'High Price'],
@@ -106,3 +106,5 @@ export default {
     ]
   }
 };
+
+export default data;

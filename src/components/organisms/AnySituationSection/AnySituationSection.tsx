@@ -1,8 +1,5 @@
 import React from 'react';
-import { Col, Container, Row, Image } from 'react-bootstrap';
-import Rectangle29 from 'assets/images/Rectangle29.png';
-import { Title, Paragraph } from 'components/atoms/Typo/Typo';
-import { FontWeight } from 'theme/constants';
+import { Col, Row, Image } from 'react-bootstrap';
 import DisposeContent from 'components/molecules/DisposeContent/DisposeContent';
 import ColumnDisposition from 'components/molecules/ColumnDisposition/ColumnDisposition';
 import data from 'assets/data/data';

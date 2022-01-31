@@ -47,14 +47,16 @@ const Header: React.FC = () => {
                   lg={6}
                   className='d-flex align-items-center'
                 >
-                  <a className='navbar-brand center-logo'>{headerData.logo}</a>
+                  <a href='index.html' className='navbar-brand center-logo'>
+                    {headerData.logo}
+                  </a>
                 </Col>
                 <Col xs={12} md={6} className='d-none d-lg-block'>
                   <div className=' d-flex justify-content-end' id='ftco-nav'>
                     <ul className='navbar-nav ml-auto mr-md-3'>
                       {headerData.menuLabels.map((label, index) => (
                         <li className='nav-item' key={index}>
-                          <a href='#' className='nav-link'>
+                          <a href='index.html' className='nav-link'>
                             {label}
                           </a>
                         </li>
