@@ -25,7 +25,11 @@ const Products: React.FC = () => {
         <div className='container'>
           <Row className='d-flex'>
             {products.products.map((product, index) => (
-              <Col md={4} key={index} className='flex-sm-row p-2'>
+              <Col
+                md={4}
+                key={index}
+                className='d-flex justify-content-center flex-sm-row p-2'
+              >
                 <div className='product-card'>
                   <Card
                     className='text-center product-card'

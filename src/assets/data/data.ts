@@ -59,21 +59,19 @@ const data = {
   testimonies: {
     0: {
       client: 'Jean-Claude Van Damme',
-      quote: '“Le grand écart technologique que tout le monde attendait !”'
+      quote: '“The big technological gap that everyone was waiting for!”'
     },
     1: {
       client: 'Sweet Client, Acme Inc.',
-      quote:
-        '“Nous créons des solutions sur mesure qui boostent les entreprises.”'
+      quote: '“We create tailored solutions that boost businesses.”'
     },
     2: {
       client: 'Dope Client, Acme LLC',
-      quote: '“Quelques une des marques avec lesquelles nous avons travaillés”'
+      quote: '“Some of the brands we worked with”'
     },
     3: {
       client: 'Cool Client, Acme LTD',
-      quote:
-        '“Ils parlent de nos oeuvres et talents. Nous vous invitons a essayer”'
+      quote: '“They talk about our works and talents. We invite you to try”'
     }
   },
   carousel: [Slider_A1, Slider_A2, Slider_A3],

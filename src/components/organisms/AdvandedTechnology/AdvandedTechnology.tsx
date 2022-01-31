@@ -16,7 +16,7 @@ const AdvandedTechnology: React.FC = () => {
             title={advancedTechnology.title}
             paragraph={advancedTechnology.description}
           />
-          <Col xs={12} sm={6} md={7} lg={7} className='text-center'>
+          <Col xs={12} sm={6} md={7} lg={6} className='text-center'>
             <div className='text-center'>
               <Image
                 bsPrefix='img'
