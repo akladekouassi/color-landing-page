@@ -1,5 +1,6 @@
 import React from 'react';
 import { LoadablePage } from 'components/atoms/PageLoader/Loadables';
+import Spinner from 'components/atoms/Spinner/Spinner';
 
 const Landing = LoadablePage(
   React.lazy(
@@ -9,7 +10,7 @@ const Landing = LoadablePage(
         './pages/LandingPage'
       )
   ),
-  <span>Page is Loading...</span>
+  <Spinner />
 );
 
 const AppContainer: React.FC = () => {

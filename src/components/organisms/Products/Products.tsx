@@ -23,12 +23,12 @@ const Products: React.FC = () => {
         </div>
         <Spacer direction='vertical' size='large' />
         <div className='container'>
-          <Row>
+          <Row className='d-flex flex-sm-row'>
             {products.products.map((product, index) => (
-              <Col md={4} key={index} className='d-flex justify-content-center'>
-                <div className=' anysituation-img'>
+              <Col md={4} key={index} className='flex-sm-row p-2'>
+                <div className='product-card'>
                   <Card
-                    className='text-center anysituation-img'
+                    className='text-center product-card'
                     style={{ width: '25rem' }}
                   >
                     <Card.Img
