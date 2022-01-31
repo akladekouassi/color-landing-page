@@ -1,0 +1,41 @@
+@import '../../../assets/scss/mixins.scss';
+@import '../../../assets/scss/variables.scss';
+
+.modal-header {
+  border: none;
+}
+
+.modal-body {
+  padding: 20px 100px 60px;
+  display: block;
+  .description-1 {
+    width: 595px;
+    text-align: center;
+    display: block;
+    margin-bottom: 20px;
+  }
+  .monkey {
+    padding-bottom: 20px;
+  }
+  .title {
+    padding-bottom: 20px;
+  }
+
+  @include tablet {
+    & {
+      padding: 0;
+    }
+    .title {
+      text-align: center;
+      padding-bottom: 20px;
+    }
+    .description-1 {
+      width: 305px;
+      text-align: center;
+      display: block;
+      margin: auto;
+      padding: auto;
+      margin-bottom: 20px;
+    }
+  }
+}

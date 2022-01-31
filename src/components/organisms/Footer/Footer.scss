@@ -1,0 +1,23 @@
+@import '../../../assets/scss/mixins.scss';
+@import '../../../assets/scss/variables.scss';
+
+.footer-wrapper {
+  background-color: #f4f4f4;
+
+  .colorz-logo {
+    margin-top: 70px;
+  }
+  .texte-section {
+    margin-bottom: 70px;
+  }
+  .logo {
+    float: right;
+  }
+
+  @include tablet {
+    .logo {
+      float: left;
+      margin-bottom: 40px;
+    }
+  }
+}

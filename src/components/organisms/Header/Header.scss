@@ -1,0 +1,128 @@
+@import '../../../assets/scss/mixins.scss';
+@import '../../../assets/scss/variables.scss';
+
+$black: map-get($colors, 'black');
+
+.header-wrapper {
+  a {
+    transition: 0.3s all ease;
+    color: map-get($colors, black);
+    &:hover,
+    &:focus {
+      text-decoration: none !important;
+      outline: none !important;
+      box-shadow: none;
+    }
+  }
+
+  @include mobile {
+    .content-on-mobile {
+      display: block;
+      margin-top: 20px;
+    }
+  }
+
+  .ftco-navbar-light {
+    padding: 10px 10px;
+    margin: 10px 10px;
+    @include tablet {
+      .center-logo {
+        float: center;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        font-size: 60px;
+      }
+    }
+
+    @include laptop {
+      .center-logo {
+        float: center;
+        position: inherit;
+        text-align: center;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        font-size: 60px;
+      }
+    }
+
+    @include media-breakpoint-down(md) {
+      color: map-get($colors, black);
+      position: relative;
+      top: 0;
+      padding: 10px 15px;
+    }
+
+    .navbar-brand {
+      color: map-get($colors, black);
+      font-family: $font-family;
+      text-transform: uppercase;
+      font-size: map-get($fontSizes, 'h3');
+      font-weight: map-get($fontWeights, 'medium');
+      &:hover,
+      &:focus {
+        color: map-get($colors, black);
+      }
+
+      @include media-breakpoint-down(md) {
+        color: map-get($colors, black);
+        position: relative;
+        text-align: center;
+      }
+    }
+
+    .navbar-nav {
+      @include media-breakpoint-down(md) {
+        padding-bottom: 10px;
+      }
+      > .nav-item {
+        > .nav-link {
+          font-size: 16px;
+          padding-top: 1.2rem;
+          padding-bottom: 1.2rem;
+          padding-left: 20px;
+          padding-right: 20px;
+          font-weight: map-get($fontWeights, ' medium');
+          font-family: $font-family;
+          color: map-get($colors, black);
+          position: relative;
+          opacity: 1 !important;
+          @include media-breakpoint-down(md) {
+            padding-left: 0;
+            padding-right: 0;
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+            color: rgba(255, 255, 255, 0.7);
+          }
+        }
+        > .buyButton {
+          border: none;
+          background: map-get($colors, 'primary');
+          padding: 10px 20px;
+          color: map-get($textColors, 'white');
+          border-radius: 20px;
+          margin-top: 5px;
+          margin-left: 20px;
+        }
+
+        &.cta {
+          > a {
+            color: map-get($colors, white);
+            background: map-get($colors, primary);
+            border-radius: 0px;
+            @include media-breakpoint-down(sm) {
+              padding-left: 15px;
+              padding-right: 15px;
+            }
+            @include media-breakpoint-down(md) {
+              color: map-get($colors, white);
+              background: map-get($colors, primary);
+              border-radius: 4px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

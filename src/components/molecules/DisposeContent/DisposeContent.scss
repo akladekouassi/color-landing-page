@@ -1,0 +1,79 @@
+@import '../../../assets/scss/mixins.scss';
+@import '../../../assets/scss/variables.scss';
+
+.dispose-content-wrapper {
+  .dispose-content-title {
+    margin-bottom: map-get($spacings, 5);
+  }
+
+  .dispose-content-description {
+    width: 820px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    height: 117px;
+    top: 228px;
+  }
+
+  .color-red {
+    color: map-get($textColors, secondary);
+  }
+
+  .color-black {
+    color: map-get($textColors, primary);
+  }
+
+  @include tablet {
+    .offer-on-mobile {
+      margin-top: 650px;
+      text-align: center;
+      display: block;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+
+  .offer-container {
+    float: right;
+    background-color: map-get($colors, primary);
+    width: 230px;
+    height: 230px;
+    padding: 40px;
+    top: -top margin;
+    border-radius: 50%;
+    .offer-content {
+      transform: rotate(10deg);
+      margin-top: 10px;
+      .offer-text {
+        margin-top: 10px;
+        width: auto;
+        height: 23px;
+        font-weight: 400;
+        font-size: 17px;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: $font-family;
+        color: map-get($colors, white);
+      }
+      .offer-price {
+        width: map-get($spacings, 23);
+        height: map-get($spacings, 9);
+        font-weight: map-get($fontWeights, medium);
+        font-size: map-get($fontSizes, xxxl);
+        text-transform: uppercase;
+        text-align: center;
+        font-family: $font-family;
+        color: map-get($colors, white);
+      }
+      .offer-right-price {
+        width: auto;
+        height: map-get($spacings, h6);
+        font-weight: map-get($fontWeights, light);
+        font-size: map-get($fontSizes, s);
+        text-align: center;
+        font-family: $font-family;
+        color: map-get($colors, white);
+      }
+    }
+  }
+}

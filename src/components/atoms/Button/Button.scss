@@ -1,0 +1,50 @@
+@import '../../../assets/scss/variables.scss';
+
+.button-style {
+  border: none;
+  background: map-get($colors, 'primary');
+  padding: 10px 20px;
+  font-family: $font-family;
+  color: map-get($colors, white);
+  font-weight: map-get($fontWeights, medium);
+  border-radius: 150px;
+  margin-top: 5px;
+  margin-left: 20px;
+  &:hover {
+    color: map-get($colors, white);
+  }
+
+  @each $name, $size in $fontSizes {
+    &.font-size-#{$name} {
+      font-size: $size;
+    }
+  }
+
+  @each $name, $size in $fontSizes {
+    &.font-size-#{$name} {
+      font-size: $size;
+    }
+  }
+
+  &.button-height-1 {
+    height: 42px;
+  }
+  &.button-height-2 {
+    height: 58px;
+  }
+  &.button-height-3 {
+    height: 58px;
+  }
+  &.button-width-1 {
+    width: 100px;
+  }
+  &.button-width-2 {
+    width: 138px;
+  }
+  &.button-width-3 {
+    width: 219px;
+  }
+  &:hover {
+    background: map-get($colors, primary);
+  }
+}

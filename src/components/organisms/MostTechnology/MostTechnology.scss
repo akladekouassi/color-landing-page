@@ -1,0 +1,27 @@
+@import '../../../assets/scss/mixins.scss';
+@import '../../../assets/scss/variables.scss';
+
+.content-wrapper {
+  .paragraph {
+    font-size: $font-family;
+    font-weight: map-get($fontWeights, medium);
+    width: 813px;
+    font-size: map-get($fontSizes, h4);
+    text-align: center;
+    line-height: 34px;
+    display: flex;
+    justify-content: center;
+    height: 117px;
+  }
+
+  @include mobile {
+    .content-space-for-mobile {
+      margin-top: map-get($spacings, 23);
+      display: block;
+      margin-right: auto;
+      margin-bottom: 70px;
+    }
+    .button-on-mobile {
+    }
+  }
+}

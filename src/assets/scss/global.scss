@@ -1,0 +1,22 @@
+@import './variables';
+
+.global-loader {
+  position: fixed;
+  z-index: 99999;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.7);
+  justify-content: center;
+  font-size: map-get($iconSizes, 'xxxl');
+  color: map-get($colors, 'secondary');
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5000000s ease-in-out 0s;
+  -webkit-text-fill-color: #fff;
+}

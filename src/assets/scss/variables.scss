@@ -1,0 +1,184 @@
+$font-family: 'Helvetica Neue', Arial, sans-serif;
+
+$colors: (
+  primary: #f0380f,
+  secondary: #f4f4f4,
+  black: #000,
+  white: #fff
+);
+
+$greys: (
+  dark: #414141,
+  normal: #757575,
+  semilight: #ebebeb,
+  light: #f6f6f6
+);
+
+$textColors: (
+  primary: map-get($colors, 'black'),
+  secondary: map-get($colors, 'primary'),
+  white: map-get($colors, 'white')
+);
+
+$fontSizes: (
+  xxs: 0.625rem,
+  // 10px
+  xs: 0.75rem,
+  // 12px
+  s: 0.875rem,
+  // 14px
+  p: 1rem,
+  // 16px
+  h6: 1.125rem,
+  // 18px
+  h5: 1.25rem,
+  // 20px
+  h4: 1.375rem,
+  // 22px
+  h3: 1.5rem,
+  // 24px
+  h2: 1.75rem,
+  // 28px
+  h1: 2rem,
+  // 32px
+  xl: 2.375rem,
+  // 38px
+  xxl: 2.625rem,
+  // 42px
+  xxxl: 2.875rem,
+  // 46px
+  xxxxl: 6rem,
+  // 96px
+);
+
+$iconSizes: (
+  xxs: 0.75rem,
+  // 12px
+  xs: 1rem,
+  // 16px
+  s: 1.5rem,
+  // 24px
+  m: 2rem,
+  // 32px
+  l: 2.5rem,
+  // 40px
+  xl: 3rem,
+  // 48px
+  xxl: 3.25rem,
+  // 52px
+  xxxl: 3.5rem,
+  // 56px
+);
+
+$spacings: (
+  0: 0rem,
+  // 0px
+  1: 0.25rem,
+  // 4px
+  2: 0.5rem,
+  // 8px
+  3: 0.75rem,
+  // 12px
+  4: 1rem,
+  // 16px
+  5: 1.5rem,
+  // 24px
+  6: 2rem,
+  // 32px
+  7: 2.5rem,
+  // 40px
+  8: 3rem,
+  // 48px
+  9: 3.5rem,
+  // 56px
+  10: 4rem,
+  // 64px
+  11: 4.5rem,
+  // 72px
+  12: 5rem,
+  // 80px
+  13: 5.5rem,
+  // 88px
+  14: 6rem,
+  // 96px
+  15: 6.5rem,
+  // 104px
+  16: 7rem,
+  // 112px
+  17: 7.5rem,
+  // 120px
+  18: 8rem,
+  // 128px
+  19: 8.5rem,
+  // 136px
+  20: 9rem,
+  // 144px
+  21: 9.5rem,
+  // 152px
+  22: 10rem,
+  // 160px
+  23: 11rem // 170px
+);
+
+$borderRadius: (
+  1: 0.25rem,
+  // 4px
+  2: 0.5rem,
+  // 8px
+  3: 0.75rem,
+  // 12px
+  4: 1rem,
+  // 16px
+  5: 1.5rem,
+  // 24px
+  6: 2rem,
+  // 32px
+  7: 2.5rem,
+  // 40px
+  8: 3rem,
+  // 48px
+  9: 3.5rem,
+  // 56px
+  10: 4rem,
+  // 64px
+  11: 4.5rem,
+  // 72px
+  12: 5rem,
+  // 80px
+  13: 5.5rem,
+  // 88px
+  14: 6rem,
+  // 96px
+  15: 6.5rem,
+  // 104px
+  100: 100rem
+);
+
+$fontWeights: (
+  light: 300,
+  normal: 400,
+  medium: 500,
+  semibold: 600,
+  bold: 700,
+  extrabold: 800,
+  boldest: 900
+);
+
+$devices: (
+  mobile: 560px,
+  tablet: 768px,
+  laptop: 1024px,
+  desktop: 1200px,
+  largescreen: 1201px
+);
+
+$headerHeight: 170px;
+$headerHeightMobileScreen: 53px;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+) !default;

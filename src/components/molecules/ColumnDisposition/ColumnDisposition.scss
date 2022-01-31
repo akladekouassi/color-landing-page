@@ -1,0 +1,10 @@
+@import '../../../assets/scss/mixins.scss';
+@import '../../../assets/scss/variables.scss';
+
+@include tablet {
+  .spacing-on-mobile {
+    display: block;
+    margin-top: map-get($spacings, 6);
+    margin-bottom: map-get($spacings, 7);
+  }
+}
