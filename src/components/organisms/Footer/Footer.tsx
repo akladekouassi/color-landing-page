@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
   const { footer } = data;
   return (
     <React.Fragment>
-      <section className='footer-wrapper'>
+      <footer className='footer-wrapper'>
         <Container>
           <Spacer direction='vertical' size='large' />
           <Row>
@@ -54,7 +54,7 @@ const Footer: React.FC = () => {
             </Col>
           </Row>
         </Container>
-      </section>
+      </footer>
     </React.Fragment>
   );
 };

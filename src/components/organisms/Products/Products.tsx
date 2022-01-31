@@ -23,7 +23,7 @@ const Products: React.FC = () => {
         </div>
         <Spacer direction='vertical' size='large' />
         <div className='container'>
-          <Row className='d-flex flex-sm-row'>
+          <Row className='d-flex'>
             {products.products.map((product, index) => (
               <Col md={4} key={index} className='flex-sm-row p-2'>
                 <div className='product-card'>

@@ -15,6 +15,9 @@
   }
 
   @include tablet {
+    .footer-wrapper {
+      padding-left: 60px;
+    }
     .logo {
       float: left;
       margin-bottom: 40px;

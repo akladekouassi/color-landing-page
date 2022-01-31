@@ -1,5 +1,3 @@
-import styled from 'styled-components/macro';
-
 const SpacingSizes = {
   xSmall: 1,
   small: 2,
@@ -15,16 +13,20 @@ export interface SpacerProps {
   size?: keyof typeof SpacingSizes;
 }
 
-export const Spacer = styled('span')<SpacerProps>(props => ({
-  display: 'block',
-  marginTop:
-    props.direction === 'vertical' ? `${SpacingSizes[props.size!]}rem` : 0,
-  marginLeft:
-    props.direction === 'horizontal' ? `${SpacingSizes[props.size!]}rem` : 0
-}));
+export const Spacer: React.FC<SpacerProps> = props => (
+  <span
+    style={{
+      display: 'block',
+      marginTop:
+        props.direction === 'vertical' ? `${SpacingSizes[props.size!]}rem` : 0,
+      marginLeft:
+        props.direction === 'horizontal' ? `${SpacingSizes[props.size!]}rem` : 0
+    }}
+  />
+);
 
 Spacer.defaultProps = {
   direction: 'vertical',
   size: 'medium',
   'aria-hidden': 'true'
-};
+} as SpacerProps;
