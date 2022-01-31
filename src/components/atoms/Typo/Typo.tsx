@@ -1,5 +1,5 @@
-import cn from 'classnames';
 import React from 'react';
+import clsx from 'clsx';
 import Typography from 'antd/lib/typography';
 import { BlockProps } from 'antd/lib/typography/Base';
 import { LinkProps } from 'antd/lib/typography/Link';
@@ -35,13 +35,13 @@ const GenericTypo =
   }: T & SharedTypoProps) =>
     (
       <Typo
-        className={cn(`fc-${variant}`, `fw-${weight}`, className)}
+        className={clsx(`fc-${variant}`, `fw-${weight}`, className)}
         {...props}
       />
     );
 
 const Text: React.FC<TextProps & ITextProps & SharedTypoProps> = props => {
-  const className = cn(props.className, props.size && `fs-${props.size}`);
+  const className = clsx(props.className, props.size && `fs-${props.size}`);
   return GenericTypo(AntText)({ ...props, className });
 };
 const Title: React.FC<TitleProps & SharedTypoProps> = GenericTypo(AntTitle);
