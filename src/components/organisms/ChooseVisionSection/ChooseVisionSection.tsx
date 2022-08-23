@@ -7,6 +7,7 @@ import clsx from 'clsx';
 import data from 'assets/data/data';
 import './ChooseVisionSection.scss';
 import Modal from 'components/atoms/Modal/Modal';
+import { renderScreenSize, renderClassNames } from 'Utils/Utils';
 
 const ChooseVisionSection: React.FC = () => {
   const [modalShow, setModalShow] = React.useState(false);
@@ -42,16 +43,9 @@ const ChooseVisionSection: React.FC = () => {
         <Row>
           {chooseYourVision.images.map((src, index) => (
             <Col
-              xs={index === 0 ? 3 : index === 1 ? 6 : 3}
-              md={index === 0 ? 3 : index === 1 ? 6 : 3}
-              className={clsx(
-                'd-flex',
-                index === 0
-                  ? 'justify-content-start'
-                  : index === 1
-                  ? 'justify-content-center align-self-end'
-                  : 'justify-content-end'
-              )}
+              xs={renderScreenSize(index)}
+              md={renderScreenSize(index)}
+              className={clsx('d-flex', renderClassNames(index))}
             >
               <div className='anysituation-img'>
                 <Image

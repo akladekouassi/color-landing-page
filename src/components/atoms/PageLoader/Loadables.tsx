@@ -5,7 +5,7 @@ export const LoadablePage =
     Component: React.LazyExoticComponent<React.ComponentType<any>>,
     Loader: NonNullable<React.ReactNode> | null = <div />
   ) =>
-  (props: unknown) =>
+  (props: any) =>
     (
       <React.Suspense fallback={Loader}>
         <Component {...props} />

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { HTMLAttributes, useState } from 'react';
 import { Container } from 'react-bootstrap';
 import clsx from 'clsx';
 import data from 'assets/data/data';
@@ -10,7 +10,7 @@ const Testimonies: React.FC = () => {
   const [active, setActive] = useState<number>(0);
 
   const handleSetClick = (event: any) => {
-    setCurrent(testimonies[event.target.getAttribute('data-quote')]);
+    setCurrent(testimonies[event.target.getAttribute('data-quote')] as any);
     setActive(event.target.getAttribute('data-quote'));
   };
 
